@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		135697D817FEB9CB00039D19 /* SDMTranslation.h in Headers */ = {isa = PBXBuildFile; fileRef = 135697D717FEB9CB00039D19 /* SDMTranslation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		220B5B1A188373A10082AF84 /* SDMMD_Types.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF9811883722B008E909F /* SDMMD_Types.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		220B5B1F188376130082AF84 /* Attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF97F18835209008E909F /* Attributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		220B5BD018837FDC0082AF84 /* SDMMobileDevice.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 220B5BCF18837FDC0082AF84 /* SDMMobileDevice.entitlements */; };
 		220B5C03188390780082AF84 /* Img4Ticket8960Cert.crt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 220B5BD4188390440082AF84 /* Img4Ticket8960Cert.crt */; };
 		220B5C04188390780082AF84 /* Img4Ticket8960DevCert.crt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 220B5BD5188390440082AF84 /* Img4Ticket8960DevCert.crt */; };
@@ -44,8 +43,6 @@
 		225AD7321765FE7700A47071 /* SDMMD_USBMuxListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 225AD7301765FE7700A47071 /* SDMMD_USBMuxListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		225AD7331765FE7700A47071 /* SDMMD_USBMuxListener.c in Sources */ = {isa = PBXBuildFile; fileRef = 225AD7311765FE7700A47071 /* SDMMD_USBMuxListener.c */; };
 		22648F9918947C4300133948 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22648F9818947C4300133948 /* IOKit.framework */; };
-		22A58E1E191157F600303D31 /* CFStringAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 22A58E1C191157F600303D31 /* CFStringAddition.c */; };
-		22A58E1F191157F600303D31 /* CFStringAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 22A58E1D191157F600303D31 /* CFStringAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22AD8E651787465A002ACFB1 /* SDMMD_AMDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AD8E631787465A002ACFB1 /* SDMMD_AMDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22AD8E661787465A002ACFB1 /* SDMMD_AMDevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 22AD8E641787465A002ACFB1 /* SDMMD_AMDevice.c */; };
 		22AD8E7417875346002ACFB1 /* SDMMD_Error.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AD8E7217875346002ACFB1 /* SDMMD_Error.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -72,31 +69,39 @@
 		22AD9369178A17AF002ACFB1 /* SDMMD_MRestoreModeDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 2215AB8F17525BA900AD1981 /* SDMMD_MRestoreModeDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22AD936A178A17B0002ACFB1 /* SDMMD_MRestoreModeDevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 2215AB9017525BA900AD1981 /* SDMMD_MRestoreModeDevice.c */; };
 		22AD9A45178F2CBF002ACFB1 /* CFRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 22AD9A44178F2CBF002ACFB1 /* CFRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22C892AB189D75A1008B1D2D /* CFDataAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 22C892A9189D75A1008B1D2D /* CFDataAddition.c */; };
-		22C892AC189D75A1008B1D2D /* CFDataAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C892AA189D75A1008B1D2D /* CFDataAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22C892AF189D75A8008B1D2D /* Buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 22C892AD189D75A8008B1D2D /* Buffer.c */; };
-		22C892B0189D75A8008B1D2D /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C892AE189D75A8008B1D2D /* Buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22D5F317179C81FD00C34745 /* SDMMD_Applications.c in Sources */ = {isa = PBXBuildFile; fileRef = 225ACD761760C86200A47071 /* SDMMD_Applications.c */; };
 		22D5F318179C81FD00C34745 /* SDMMD_Applications.h in Headers */ = {isa = PBXBuildFile; fileRef = 225ACD751760C86200A47071 /* SDMMD_Applications.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22D5F319179C820200C34745 /* SDMMD_Notification.c in Sources */ = {isa = PBXBuildFile; fileRef = 225AC5BF175B976500A47071 /* SDMMD_Notification.c */; };
 		22D5F31A179C820200C34745 /* SDMMD_Notification.h in Headers */ = {isa = PBXBuildFile; fileRef = 225AC5BE175B976500A47071 /* SDMMD_Notification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22D7FA3918F0B1BC0034CC66 /* SDMMD_AppleFileConduit.c in Sources */ = {isa = PBXBuildFile; fileRef = 22D7FA3818F0B1BC0034CC66 /* SDMMD_AppleFileConduit.c */; };
 		22D7FA3A18F0B2F50034CC66 /* SDMMD_AppleFileConduit.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D7FA3718F0B1AD0034CC66 /* SDMMD_AppleFileConduit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22D7FA3C18F0C66D0034CC66 /* Endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D7FA3B18F0C6010034CC66 /* Endian.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22DEF971188350E6008E909F /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF961188350E6008E909F /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22DEF972188350E6008E909F /* CFDictionaryAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 22DEF963188350E6008E909F /* CFDictionaryAddition.c */; };
-		22DEF973188350E6008E909F /* CFDictionaryAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF964188350E6008E909F /* CFDictionaryAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22DEF974188350E6008E909F /* CFTypeAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 22DEF965188350E6008E909F /* CFTypeAddition.c */; };
-		22DEF975188350E6008E909F /* CFTypeAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF966188350E6008E909F /* CFTypeAddition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22DEF978188350E6008E909F /* Matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF96A188350E6008E909F /* Matrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22DEF97B188350E6008E909F /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF96D188350E6008E909F /* Logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22DEF97C188350E6008E909F /* Number.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF96E188350E6008E909F /* Number.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22DEF97D188350E6008E909F /* Pointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF96F188350E6008E909F /* Pointer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22DEF97E188350E6008E909F /* Range.h in Headers */ = {isa = PBXBuildFile; fileRef = 22DEF970188350E6008E909F /* Range.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22EFC8B61900282500C29BFF /* File.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EFC8B51900282500C29BFF /* File.c */; };
-		22EFC8B71900291600C29BFF /* File.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EFC8B41900281B00C29BFF /* File.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EAE0F7D191B5C8800276DA6 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F62191B5C8800276DA6 /* Array.h */; };
+		3EAE0F7E191B5C8800276DA6 /* Attributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F63191B5C8800276DA6 /* Attributes.h */; };
+		3EAE0F7F191B5C8800276DA6 /* Buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0F64191B5C8800276DA6 /* Buffer.c */; };
+		3EAE0F80191B5C8800276DA6 /* Buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F65191B5C8800276DA6 /* Buffer.h */; };
+		3EAE0F81191B5C8800276DA6 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F66191B5C8800276DA6 /* Core.h */; };
+		3EAE0F82191B5C8800276DA6 /* CFDataAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0F68191B5C8800276DA6 /* CFDataAddition.c */; };
+		3EAE0F83191B5C8800276DA6 /* CFDataAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F69191B5C8800276DA6 /* CFDataAddition.h */; };
+		3EAE0F84191B5C8800276DA6 /* CFDictionaryAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0F6A191B5C8800276DA6 /* CFDictionaryAddition.c */; };
+		3EAE0F85191B5C8800276DA6 /* CFDictionaryAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F6B191B5C8800276DA6 /* CFDictionaryAddition.h */; };
+		3EAE0F86191B5C8800276DA6 /* CFStringAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0F6C191B5C8800276DA6 /* CFStringAddition.c */; };
+		3EAE0F87191B5C8800276DA6 /* CFStringAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F6D191B5C8800276DA6 /* CFStringAddition.h */; };
+		3EAE0F88191B5C8800276DA6 /* CFTypeAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0F6E191B5C8800276DA6 /* CFTypeAddition.c */; };
+		3EAE0F89191B5C8800276DA6 /* CFTypeAddition.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F6F191B5C8800276DA6 /* CFTypeAddition.h */; };
+		3EAE0F8A191B5C8800276DA6 /* Endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F70191B5C8800276DA6 /* Endian.h */; };
+		3EAE0F8B191B5C8800276DA6 /* File.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0F71191B5C8800276DA6 /* File.c */; };
+		3EAE0F8C191B5C8800276DA6 /* File.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F72191B5C8800276DA6 /* File.h */; };
+		3EAE0F8D191B5C8800276DA6 /* GeometryMaths.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F74191B5C8800276DA6 /* GeometryMaths.h */; };
+		3EAE0F8E191B5C8800276DA6 /* Matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0F75191B5C8800276DA6 /* Matrix.c */; };
+		3EAE0F8F191B5C8800276DA6 /* Matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F76191B5C8800276DA6 /* Matrix.h */; };
+		3EAE0F90191B5C8800276DA6 /* Vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0F77191B5C8800276DA6 /* Vector.c */; };
+		3EAE0F91191B5C8800276DA6 /* Vector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F78191B5C8800276DA6 /* Vector.h */; };
+		3EAE0F92191B5C8800276DA6 /* Logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F79191B5C8800276DA6 /* Logging.h */; };
+		3EAE0F93191B5C8800276DA6 /* Number.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F7A191B5C8800276DA6 /* Number.h */; };
+		3EAE0F94191B5C8800276DA6 /* Pointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F7B191B5C8800276DA6 /* Pointer.h */; };
+		3EAE0F95191B5C8800276DA6 /* Range.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAE0F7C191B5C8800276DA6 /* Range.h */; };
+		3EAE0F97191B641C00276DA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAE0F96191B641C00276DA6 /* Foundation.framework */; };
 		3F38D21C18AECF7C00DE5FA9 /* SDMTypeTranslation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F38D21B18AECE1200DE5FA9 /* SDMTypeTranslation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3F38D22218B3B82800DE5FA9 /* Array.h in Headers */ = {isa = PBXBuildFile; fileRef = 2278490F18AFE5A100D1D6FB /* Array.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -202,10 +207,7 @@
 		225AD7301765FE7700A47071 /* SDMMD_USBMuxListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMMD_USBMuxListener.h; sourceTree = "<group>"; };
 		225AD7311765FE7700A47071 /* SDMMD_USBMuxListener.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SDMMD_USBMuxListener.c; sourceTree = "<group>"; };
 		22648F9818947C4300133948 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		2278490F18AFE5A100D1D6FB /* Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
 		22A58E1919114EA100303D31 /* SDMMD_MobileBackup2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMMD_MobileBackup2.h; sourceTree = "<group>"; };
-		22A58E1C191157F600303D31 /* CFStringAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFStringAddition.c; sourceTree = "<group>"; };
-		22A58E1D191157F600303D31 /* CFStringAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFStringAddition.h; sourceTree = "<group>"; };
 		22AD8E5817871506002ACFB1 /* SDMMD_AFC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMMD_AFC.h; sourceTree = "<group>"; };
 		22AD8E5917871506002ACFB1 /* SDMMD_AFC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SDMMD_AFC.c; sourceTree = "<group>"; };
 		22AD8E631787465A002ACFB1 /* SDMMD_AMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMMD_AMDevice.h; sourceTree = "<group>"; };
@@ -219,33 +221,37 @@
 		22AD92461789DC7E002ACFB1 /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
 		22AD924A1789DCA7002ACFB1 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
 		22AD9A44178F2CBF002ACFB1 /* CFRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFRuntime.h; sourceTree = "<group>"; };
-		22C892A9189D75A1008B1D2D /* CFDataAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFDataAddition.c; sourceTree = "<group>"; };
-		22C892AA189D75A1008B1D2D /* CFDataAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDataAddition.h; sourceTree = "<group>"; };
-		22C892AD189D75A8008B1D2D /* Buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Buffer.c; sourceTree = "<group>"; };
-		22C892AE189D75A8008B1D2D /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
 		22D7FA3718F0B1AD0034CC66 /* SDMMD_AppleFileConduit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMMD_AppleFileConduit.h; sourceTree = "<group>"; };
 		22D7FA3818F0B1BC0034CC66 /* SDMMD_AppleFileConduit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SDMMD_AppleFileConduit.c; sourceTree = "<group>"; };
-		22D7FA3B18F0C6010034CC66 /* Endian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Endian.h; sourceTree = "<group>"; };
-		22DEF961188350E6008E909F /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
-		22DEF963188350E6008E909F /* CFDictionaryAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFDictionaryAddition.c; sourceTree = "<group>"; };
-		22DEF964188350E6008E909F /* CFDictionaryAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDictionaryAddition.h; sourceTree = "<group>"; };
-		22DEF965188350E6008E909F /* CFTypeAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFTypeAddition.c; sourceTree = "<group>"; };
-		22DEF966188350E6008E909F /* CFTypeAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTypeAddition.h; sourceTree = "<group>"; };
-		22DEF968188350E6008E909F /* GeometryMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometryMaths.h; sourceTree = "<group>"; };
-		22DEF969188350E6008E909F /* Matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Matrix.c; sourceTree = "<group>"; };
-		22DEF96A188350E6008E909F /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
-		22DEF96B188350E6008E909F /* Vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Vector.c; sourceTree = "<group>"; };
-		22DEF96C188350E6008E909F /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
-		22DEF96D188350E6008E909F /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
-		22DEF96E188350E6008E909F /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
-		22DEF96F188350E6008E909F /* Pointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pointer.h; sourceTree = "<group>"; };
-		22DEF970188350E6008E909F /* Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Range.h; sourceTree = "<group>"; };
-		22DEF97F18835209008E909F /* Attributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
 		22DEF9811883722B008E909F /* SDMMD_Types.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMMD_Types.h; sourceTree = "<group>"; };
-		22EFC8B41900281B00C29BFF /* File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
-		22EFC8B51900282500C29BFF /* File.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = File.c; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		3EAE0F62191B5C8800276DA6 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		3EAE0F63191B5C8800276DA6 /* Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
+		3EAE0F64191B5C8800276DA6 /* Buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Buffer.c; sourceTree = "<group>"; };
+		3EAE0F65191B5C8800276DA6 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
+		3EAE0F66191B5C8800276DA6 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		3EAE0F68191B5C8800276DA6 /* CFDataAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFDataAddition.c; sourceTree = "<group>"; };
+		3EAE0F69191B5C8800276DA6 /* CFDataAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDataAddition.h; sourceTree = "<group>"; };
+		3EAE0F6A191B5C8800276DA6 /* CFDictionaryAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFDictionaryAddition.c; sourceTree = "<group>"; };
+		3EAE0F6B191B5C8800276DA6 /* CFDictionaryAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDictionaryAddition.h; sourceTree = "<group>"; };
+		3EAE0F6C191B5C8800276DA6 /* CFStringAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFStringAddition.c; sourceTree = "<group>"; };
+		3EAE0F6D191B5C8800276DA6 /* CFStringAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFStringAddition.h; sourceTree = "<group>"; };
+		3EAE0F6E191B5C8800276DA6 /* CFTypeAddition.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = CFTypeAddition.c; sourceTree = "<group>"; };
+		3EAE0F6F191B5C8800276DA6 /* CFTypeAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTypeAddition.h; sourceTree = "<group>"; };
+		3EAE0F70191B5C8800276DA6 /* Endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endian.h; sourceTree = "<group>"; };
+		3EAE0F71191B5C8800276DA6 /* File.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = File.c; sourceTree = "<group>"; };
+		3EAE0F72191B5C8800276DA6 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		3EAE0F74191B5C8800276DA6 /* GeometryMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometryMaths.h; sourceTree = "<group>"; };
+		3EAE0F75191B5C8800276DA6 /* Matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Matrix.c; sourceTree = "<group>"; };
+		3EAE0F76191B5C8800276DA6 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		3EAE0F77191B5C8800276DA6 /* Vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Vector.c; sourceTree = "<group>"; };
+		3EAE0F78191B5C8800276DA6 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		3EAE0F79191B5C8800276DA6 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		3EAE0F7A191B5C8800276DA6 /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
+		3EAE0F7B191B5C8800276DA6 /* Pointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pointer.h; sourceTree = "<group>"; };
+		3EAE0F7C191B5C8800276DA6 /* Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Range.h; sourceTree = "<group>"; };
+		3EAE0F96191B641C00276DA6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3F38D21B18AECE1200DE5FA9 /* SDMTypeTranslation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDMTypeTranslation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -254,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAE0F97191B641C00276DA6 /* Foundation.framework in Frameworks */,
 				22648F9918947C4300133948 /* IOKit.framework in Frameworks */,
 				2215A84017500DE700AD1981 /* CoreFoundation.framework in Frameworks */,
 				22AD92471789DC7E002ACFB1 /* libssl.dylib in Frameworks */,
@@ -463,61 +470,12 @@
 			path = SDMUSBmuxListener;
 			sourceTree = "<group>";
 		};
-		22DEF960188350E6008E909F /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				22C892AE189D75A8008B1D2D /* Buffer.h */,
-				22C892AD189D75A8008B1D2D /* Buffer.c */,
-				22EFC8B41900281B00C29BFF /* File.h */,
-				22EFC8B51900282500C29BFF /* File.c */,
-				22DEF961188350E6008E909F /* Core.h */,
-				22DEF962188350E6008E909F /* CoreFoundation */,
-				22DEF967188350E6008E909F /* Geometry */,
-				22DEF96D188350E6008E909F /* Logging.h */,
-				22DEF96E188350E6008E909F /* Number.h */,
-				22DEF96F188350E6008E909F /* Pointer.h */,
-				22DEF970188350E6008E909F /* Range.h */,
-				22DEF97F18835209008E909F /* Attributes.h */,
-				2278490F18AFE5A100D1D6FB /* Array.h */,
-				22D7FA3B18F0C6010034CC66 /* Endian.h */,
-			);
-			name = Core;
-			path = ../Core/Core;
-			sourceTree = "<group>";
-		};
-		22DEF962188350E6008E909F /* CoreFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				22A58E1C191157F600303D31 /* CFStringAddition.c */,
-				22A58E1D191157F600303D31 /* CFStringAddition.h */,
-				22C892AA189D75A1008B1D2D /* CFDataAddition.h */,
-				22C892A9189D75A1008B1D2D /* CFDataAddition.c */,
-				22DEF964188350E6008E909F /* CFDictionaryAddition.h */,
-				22DEF963188350E6008E909F /* CFDictionaryAddition.c */,
-				22DEF966188350E6008E909F /* CFTypeAddition.h */,
-				22DEF965188350E6008E909F /* CFTypeAddition.c */,
-			);
-			path = CoreFoundation;
-			sourceTree = "<group>";
-		};
-		22DEF967188350E6008E909F /* Geometry */ = {
-			isa = PBXGroup;
-			children = (
-				22DEF968188350E6008E909F /* GeometryMaths.h */,
-				22DEF969188350E6008E909F /* Matrix.c */,
-				22DEF96A188350E6008E909F /* Matrix.h */,
-				22DEF96B188350E6008E909F /* Vector.c */,
-				22DEF96C188350E6008E909F /* Vector.h */,
-			);
-			path = Geometry;
-			sourceTree = "<group>";
-		};
 		29B97314FDCFA39411CA2CEA /* SDM_MD_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3EAE0F61191B5C8800276DA6 /* Core */,
 				220B5BD3188390440082AF84 /* Certs */,
 				220B5BCF18837FDC0082AF84 /* SDMMobileDevice.entitlements */,
-				22DEF960188350E6008E909F /* Core */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -538,10 +496,60 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EAE0F96191B641C00276DA6 /* Foundation.framework */,
 				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EAE0F61191B5C8800276DA6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3EAE0F62191B5C8800276DA6 /* Array.h */,
+				3EAE0F63191B5C8800276DA6 /* Attributes.h */,
+				3EAE0F64191B5C8800276DA6 /* Buffer.c */,
+				3EAE0F65191B5C8800276DA6 /* Buffer.h */,
+				3EAE0F66191B5C8800276DA6 /* Core.h */,
+				3EAE0F67191B5C8800276DA6 /* CoreFoundation */,
+				3EAE0F70191B5C8800276DA6 /* Endian.h */,
+				3EAE0F71191B5C8800276DA6 /* File.c */,
+				3EAE0F72191B5C8800276DA6 /* File.h */,
+				3EAE0F73191B5C8800276DA6 /* Geometry */,
+				3EAE0F79191B5C8800276DA6 /* Logging.h */,
+				3EAE0F7A191B5C8800276DA6 /* Number.h */,
+				3EAE0F7B191B5C8800276DA6 /* Pointer.h */,
+				3EAE0F7C191B5C8800276DA6 /* Range.h */,
+			);
+			name = Core;
+			path = ../Core;
+			sourceTree = "<group>";
+		};
+		3EAE0F67191B5C8800276DA6 /* CoreFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				3EAE0F68191B5C8800276DA6 /* CFDataAddition.c */,
+				3EAE0F69191B5C8800276DA6 /* CFDataAddition.h */,
+				3EAE0F6A191B5C8800276DA6 /* CFDictionaryAddition.c */,
+				3EAE0F6B191B5C8800276DA6 /* CFDictionaryAddition.h */,
+				3EAE0F6C191B5C8800276DA6 /* CFStringAddition.c */,
+				3EAE0F6D191B5C8800276DA6 /* CFStringAddition.h */,
+				3EAE0F6E191B5C8800276DA6 /* CFTypeAddition.c */,
+				3EAE0F6F191B5C8800276DA6 /* CFTypeAddition.h */,
+			);
+			path = CoreFoundation;
+			sourceTree = "<group>";
+		};
+		3EAE0F73191B5C8800276DA6 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				3EAE0F74191B5C8800276DA6 /* GeometryMaths.h */,
+				3EAE0F75191B5C8800276DA6 /* Matrix.c */,
+				3EAE0F76191B5C8800276DA6 /* Matrix.h */,
+				3EAE0F77191B5C8800276DA6 /* Vector.c */,
+				3EAE0F78191B5C8800276DA6 /* Vector.h */,
+			);
+			path = Geometry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,43 +562,45 @@
 				135697D817FEB9CB00039D19 /* SDMTranslation.h in Headers */,
 				3F38D21C18AECF7C00DE5FA9 /* SDMTypeTranslation.h in Headers */,
 				225ACB46175FBFA300A47071 /* SDMMD_Debugger.h in Headers */,
+				3EAE0F83191B5C8800276DA6 /* CFDataAddition.h in Headers */,
 				225AD7321765FE7700A47071 /* SDMMD_USBMuxListener.h in Headers */,
 				22AD8E651787465A002ACFB1 /* SDMMD_AMDevice.h in Headers */,
 				22AD8E7417875346002ACFB1 /* SDMMD_Error.h in Headers */,
 				22AD8E7917875B1E002ACFB1 /* SDMMD_Functions.h in Headers */,
 				22AD8F251789B3DF002ACFB1 /* SDMMD_MCP.h in Headers */,
+				3EAE0F85191B5C8800276DA6 /* CFDictionaryAddition.h in Headers */,
+				3EAE0F80191B5C8800276DA6 /* Buffer.h in Headers */,
+				3EAE0F8A191B5C8800276DA6 /* Endian.h in Headers */,
 				22AD8FD41789BAB5002ACFB1 /* SDMMobileDevice.h in Headers */,
 				220B5B1A188373A10082AF84 /* SDMMD_Types.h in Headers */,
 				22AD91C21789D715002ACFB1 /* SDMMD_Service.h in Headers */,
 				22AD91C41789D71A002ACFB1 /* SDMMD_Connection.h in Headers */,
 				22AD9347178A1609002ACFB1 /* SDMMD_MRecoveryModeDevice.h in Headers */,
 				22AD9348178A160B002ACFB1 /* SDMMD_Keys.h in Headers */,
-				220B5B1F188376130082AF84 /* Attributes.h in Headers */,
-				3F38D22218B3B82800DE5FA9 /* Array.h in Headers */,
+				3EAE0F81191B5C8800276DA6 /* Core.h in Headers */,
+				3EAE0F91191B5C8800276DA6 /* Vector.h in Headers */,
 				22AD9350178A1678002ACFB1 /* SDMMD_MRUSBDevice.h in Headers */,
 				22AD9355178A16CF002ACFB1 /* SDMMD_MDFUModeDevice.h in Headers */,
-				22DEF97B188350E6008E909F /* Logging.h in Headers */,
-				22DEF97C188350E6008E909F /* Number.h in Headers */,
-				22DEF978188350E6008E909F /* Matrix.h in Headers */,
-				22DEF975188350E6008E909F /* CFTypeAddition.h in Headers */,
-				22DEF973188350E6008E909F /* CFDictionaryAddition.h in Headers */,
-				22DEF971188350E6008E909F /* Core.h in Headers */,
-				22DEF97E188350E6008E909F /* Range.h in Headers */,
-				22DEF97D188350E6008E909F /* Pointer.h in Headers */,
+				3EAE0F87191B5C8800276DA6 /* CFStringAddition.h in Headers */,
+				3EAE0F8D191B5C8800276DA6 /* GeometryMaths.h in Headers */,
 				22AD935A178A175E002ACFB1 /* SDMMD_MRestorableDevice.h in Headers */,
 				22AD9369178A17AF002ACFB1 /* SDMMD_MRestoreModeDevice.h in Headers */,
 				22AD9A45178F2CBF002ACFB1 /* CFRuntime.h in Headers */,
-				22C892AC189D75A1008B1D2D /* CFDataAddition.h in Headers */,
-				22C892B0189D75A8008B1D2D /* Buffer.h in Headers */,
-				22D7FA3C18F0C66D0034CC66 /* Endian.h in Headers */,
 				22D7FA3A18F0B2F50034CC66 /* SDMMD_AppleFileConduit.h in Headers */,
 				22D5F318179C81FD00C34745 /* SDMMD_Applications.h in Headers */,
 				22D5F31A179C820200C34745 /* SDMMD_Notification.h in Headers */,
+				3EAE0F95191B5C8800276DA6 /* Range.h in Headers */,
+				3EAE0F8F191B5C8800276DA6 /* Matrix.h in Headers */,
+				3EAE0F7D191B5C8800276DA6 /* Array.h in Headers */,
 				222EF6EB1905BDB8000270C3 /* SDMMD_Debugger_Internal.h in Headers */,
+				3EAE0F8C191B5C8800276DA6 /* File.h in Headers */,
 				224CAB7F191455A50079689D /* SDMMD_MobileBackup2.h in Headers */,
-				22A58E1F191157F600303D31 /* CFStringAddition.h in Headers */,
+				3EAE0F92191B5C8800276DA6 /* Logging.h in Headers */,
+				3EAE0F89191B5C8800276DA6 /* CFTypeAddition.h in Headers */,
+				3EAE0F94191B5C8800276DA6 /* Pointer.h in Headers */,
+				3EAE0F7E191B5C8800276DA6 /* Attributes.h in Headers */,
 				222EF6EC1905BDB8000270C3 /* SDMMD_MobileConfig.h in Headers */,
-				22EFC8B71900291600C29BFF /* File.h in Headers */,
+				3EAE0F93191B5C8800276DA6 /* Number.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,25 +672,27 @@
 				225ACB47175FBFA300A47071 /* SDMMD_Debugger.c in Sources */,
 				22D7FA3918F0B1BC0034CC66 /* SDMMD_AppleFileConduit.c in Sources */,
 				225AD7331765FE7700A47071 /* SDMMD_USBMuxListener.c in Sources */,
-				22DEF972188350E6008E909F /* CFDictionaryAddition.c in Sources */,
 				22AD8E661787465A002ACFB1 /* SDMMD_AMDevice.c in Sources */,
-				22C892AF189D75A8008B1D2D /* Buffer.c in Sources */,
-				22A58E1E191157F600303D31 /* CFStringAddition.c in Sources */,
 				22AD8E7517875346002ACFB1 /* SDMMD_Error.c in Sources */,
+				3EAE0F84191B5C8800276DA6 /* CFDictionaryAddition.c in Sources */,
 				22AD8F261789B3DF002ACFB1 /* SDMMD_MCP.c in Sources */,
 				22AD91C31789D715002ACFB1 /* SDMMD_Service.c in Sources */,
 				224CAB7E191449580079689D /* SDMMD_MobileBackup2.c in Sources */,
 				22AD91C51789D71A002ACFB1 /* SDMMD_Connection.c in Sources */,
+				3EAE0F7F191B5C8800276DA6 /* Buffer.c in Sources */,
 				22AD9349178A1622002ACFB1 /* SDMMD_MRecoveryModeDevice.c in Sources */,
-				22DEF974188350E6008E909F /* CFTypeAddition.c in Sources */,
+				3EAE0F90191B5C8800276DA6 /* Vector.c in Sources */,
 				22AD934F178A1675002ACFB1 /* SDMMD_MRUSBDevice.c in Sources */,
 				22AD9356178A16CF002ACFB1 /* SDMMD_MDFUModeDevice.c in Sources */,
 				22AD9359178A1759002ACFB1 /* SDMMD_MRestorableDevice.c in Sources */,
-				22EFC8B61900282500C29BFF /* File.c in Sources */,
+				3EAE0F82191B5C8800276DA6 /* CFDataAddition.c in Sources */,
 				22AD936A178A17B0002ACFB1 /* SDMMD_MRestoreModeDevice.c in Sources */,
-				22C892AB189D75A1008B1D2D /* CFDataAddition.c in Sources */,
 				22D5F317179C81FD00C34745 /* SDMMD_Applications.c in Sources */,
 				22D5F319179C820200C34745 /* SDMMD_Notification.c in Sources */,
+				3EAE0F8B191B5C8800276DA6 /* File.c in Sources */,
+				3EAE0F86191B5C8800276DA6 /* CFStringAddition.c in Sources */,
+				3EAE0F88191B5C8800276DA6 /* CFTypeAddition.c in Sources */,
+				3EAE0F8E191B5C8800276DA6 /* Matrix.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
