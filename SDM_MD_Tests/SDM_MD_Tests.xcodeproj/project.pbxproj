@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		22B3D80318E74EE40007F104 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3D80218E74EE40007F104 /* CoreFoundation.framework */; };
 		22B3D80618E74EE40007F104 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 22B3D80518E74EE40007F104 /* main.c */; };
-		22B3D80F18E74F1E0007F104 /* SDMMobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3D80E18E74F1E0007F104 /* SDMMobileDevice.framework */; };
-		22B3D81118E74F2E0007F104 /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B3D81018E74F2E0007F104 /* MobileDevice.framework */; };
 		22B3D81318E74FBF0007F104 /* test_AMDevice.c in Sources */ = {isa = PBXBuildFile; fileRef = 22B3D81218E74FBF0007F104 /* test_AMDevice.c */; };
 		22B3D81A18E75BCC0007F104 /* listener.c in Sources */ = {isa = PBXBuildFile; fileRef = 22B3D81918E75BCC0007F104 /* listener.c */; };
 		22B3D82218E76A2C0007F104 /* test_AMService.c in Sources */ = {isa = PBXBuildFile; fileRef = 22B3D82118E76A2C0007F104 /* test_AMService.c */; };
@@ -22,6 +20,16 @@
 		22EC43DB18F05A7E003BA4C9 /* test_AFC.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EC43DA18F05A7E003BA4C9 /* test_AFC.c */; };
 		22EC43DE18F05BED003BA4C9 /* test_apple_AFC.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EC43DD18F05BED003BA4C9 /* test_apple_AFC.c */; };
 		22EC43E118F05C01003BA4C9 /* test_sdm_AFC.c in Sources */ = {isa = PBXBuildFile; fileRef = 22EC43E018F05C01003BA4C9 /* test_sdm_AFC.c */; };
+		3EAE0F99191B70BC00276DA6 /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAE0F98191B70BC00276DA6 /* MobileDevice.framework */; };
+		3EAE0F9B191B70D500276DA6 /* SDMMobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EAE0F9A191B70D500276DA6 /* SDMMobileDevice.framework */; };
+		3EAE0FB8191B722100276DA6 /* Buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0F9F191B722100276DA6 /* Buffer.c */; };
+		3EAE0FB9191B722100276DA6 /* CFDataAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0FA3191B722100276DA6 /* CFDataAddition.c */; };
+		3EAE0FBA191B722100276DA6 /* CFDictionaryAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0FA5191B722100276DA6 /* CFDictionaryAddition.c */; };
+		3EAE0FBB191B722100276DA6 /* CFStringAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0FA7191B722100276DA6 /* CFStringAddition.c */; };
+		3EAE0FBC191B722100276DA6 /* CFTypeAddition.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0FA9191B722100276DA6 /* CFTypeAddition.c */; };
+		3EAE0FBD191B722100276DA6 /* File.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0FAC191B722100276DA6 /* File.c */; };
+		3EAE0FBE191B722100276DA6 /* Matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0FB0191B722100276DA6 /* Matrix.c */; };
+		3EAE0FBF191B722100276DA6 /* Vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EAE0FB2191B722100276DA6 /* Vector.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,6 +74,33 @@
 		22EC43DD18F05BED003BA4C9 /* test_apple_AFC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_apple_AFC.c; sourceTree = "<group>"; };
 		22EC43DF18F05BF8003BA4C9 /* test_sdm_AFC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_sdm_AFC.h; sourceTree = "<group>"; };
 		22EC43E018F05C01003BA4C9 /* test_sdm_AFC.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_sdm_AFC.c; sourceTree = "<group>"; };
+		3EAE0F98191B70BC00276DA6 /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileDevice.framework; path = ../../../../../../System/Library/PrivateFrameworks/MobileDevice.framework; sourceTree = "<group>"; };
+		3EAE0F9A191B70D500276DA6 /* SDMMobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDMMobileDevice.framework; path = ../../../../Library/Developer/Xcode/DerivedData/build/Release/SDMMobileDevice.framework; sourceTree = "<group>"; };
+		3EAE0F9D191B722100276DA6 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		3EAE0F9E191B722100276DA6 /* Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
+		3EAE0F9F191B722100276DA6 /* Buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Buffer.c; sourceTree = "<group>"; };
+		3EAE0FA0191B722100276DA6 /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
+		3EAE0FA1191B722100276DA6 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		3EAE0FA3191B722100276DA6 /* CFDataAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFDataAddition.c; sourceTree = "<group>"; };
+		3EAE0FA4191B722100276DA6 /* CFDataAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDataAddition.h; sourceTree = "<group>"; };
+		3EAE0FA5191B722100276DA6 /* CFDictionaryAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFDictionaryAddition.c; sourceTree = "<group>"; };
+		3EAE0FA6191B722100276DA6 /* CFDictionaryAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFDictionaryAddition.h; sourceTree = "<group>"; };
+		3EAE0FA7191B722100276DA6 /* CFStringAddition.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CFStringAddition.c; sourceTree = "<group>"; };
+		3EAE0FA8191B722100276DA6 /* CFStringAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFStringAddition.h; sourceTree = "<group>"; };
+		3EAE0FA9191B722100276DA6 /* CFTypeAddition.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = CFTypeAddition.c; sourceTree = "<group>"; };
+		3EAE0FAA191B722100276DA6 /* CFTypeAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTypeAddition.h; sourceTree = "<group>"; };
+		3EAE0FAB191B722100276DA6 /* Endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Endian.h; sourceTree = "<group>"; };
+		3EAE0FAC191B722100276DA6 /* File.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = File.c; sourceTree = "<group>"; };
+		3EAE0FAD191B722100276DA6 /* File.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = File.h; sourceTree = "<group>"; };
+		3EAE0FAF191B722100276DA6 /* GeometryMaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeometryMaths.h; sourceTree = "<group>"; };
+		3EAE0FB0191B722100276DA6 /* Matrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Matrix.c; sourceTree = "<group>"; };
+		3EAE0FB1191B722100276DA6 /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matrix.h; sourceTree = "<group>"; };
+		3EAE0FB2191B722100276DA6 /* Vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Vector.c; sourceTree = "<group>"; };
+		3EAE0FB3191B722100276DA6 /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		3EAE0FB4191B722100276DA6 /* Logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logging.h; sourceTree = "<group>"; };
+		3EAE0FB5191B722100276DA6 /* Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Number.h; sourceTree = "<group>"; };
+		3EAE0FB6191B722100276DA6 /* Pointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pointer.h; sourceTree = "<group>"; };
+		3EAE0FB7191B722100276DA6 /* Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Range.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B3D81118E74F2E0007F104 /* MobileDevice.framework in Frameworks */,
-				22B3D80F18E74F1E0007F104 /* SDMMobileDevice.framework in Frameworks */,
+				3EAE0F99191B70BC00276DA6 /* MobileDevice.framework in Frameworks */,
+				3EAE0F9B191B70D500276DA6 /* SDMMobileDevice.framework in Frameworks */,
 				22B3D80318E74EE40007F104 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +120,7 @@
 		22B3D7F618E74EE40007F104 = {
 			isa = PBXGroup;
 			children = (
+				3EAE0F9C191B722100276DA6 /* Core */,
 				22B3D80418E74EE40007F104 /* SDM_MD_Tests */,
 				22B3D80118E74EE40007F104 /* Frameworks */,
 				22B3D80018E74EE40007F104 /* Products */,
@@ -102,6 +138,8 @@
 		22B3D80118E74EE40007F104 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3EAE0F9A191B70D500276DA6 /* SDMMobileDevice.framework */,
+				3EAE0F98191B70BC00276DA6 /* MobileDevice.framework */,
 				22B3D81718E75A690007F104 /* MobileDevice.h */,
 				22B3D81018E74F2E0007F104 /* MobileDevice.framework */,
 				22B3D80E18E74F1E0007F104 /* SDMMobileDevice.framework */,
@@ -181,6 +219,55 @@
 			name = AFC;
 			sourceTree = "<group>";
 		};
+		3EAE0F9C191B722100276DA6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3EAE0F9D191B722100276DA6 /* Array.h */,
+				3EAE0F9E191B722100276DA6 /* Attributes.h */,
+				3EAE0F9F191B722100276DA6 /* Buffer.c */,
+				3EAE0FA0191B722100276DA6 /* Buffer.h */,
+				3EAE0FA1191B722100276DA6 /* Core.h */,
+				3EAE0FA2191B722100276DA6 /* CoreFoundation */,
+				3EAE0FAB191B722100276DA6 /* Endian.h */,
+				3EAE0FAC191B722100276DA6 /* File.c */,
+				3EAE0FAD191B722100276DA6 /* File.h */,
+				3EAE0FAE191B722100276DA6 /* Geometry */,
+				3EAE0FB4191B722100276DA6 /* Logging.h */,
+				3EAE0FB5191B722100276DA6 /* Number.h */,
+				3EAE0FB6191B722100276DA6 /* Pointer.h */,
+				3EAE0FB7191B722100276DA6 /* Range.h */,
+			);
+			name = Core;
+			path = ../Core;
+			sourceTree = "<group>";
+		};
+		3EAE0FA2191B722100276DA6 /* CoreFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				3EAE0FA3191B722100276DA6 /* CFDataAddition.c */,
+				3EAE0FA4191B722100276DA6 /* CFDataAddition.h */,
+				3EAE0FA5191B722100276DA6 /* CFDictionaryAddition.c */,
+				3EAE0FA6191B722100276DA6 /* CFDictionaryAddition.h */,
+				3EAE0FA7191B722100276DA6 /* CFStringAddition.c */,
+				3EAE0FA8191B722100276DA6 /* CFStringAddition.h */,
+				3EAE0FA9191B722100276DA6 /* CFTypeAddition.c */,
+				3EAE0FAA191B722100276DA6 /* CFTypeAddition.h */,
+			);
+			path = CoreFoundation;
+			sourceTree = "<group>";
+		};
+		3EAE0FAE191B722100276DA6 /* Geometry */ = {
+			isa = PBXGroup;
+			children = (
+				3EAE0FAF191B722100276DA6 /* GeometryMaths.h */,
+				3EAE0FB0191B722100276DA6 /* Matrix.c */,
+				3EAE0FB1191B722100276DA6 /* Matrix.h */,
+				3EAE0FB2191B722100276DA6 /* Vector.c */,
+				3EAE0FB3191B722100276DA6 /* Vector.h */,
+			);
+			path = Geometry;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,18 +319,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EAE0FB8191B722100276DA6 /* Buffer.c in Sources */,
 				22B3D82818E888490007F104 /* test_apple_AMDevice.c in Sources */,
 				22B3D83118E895900007F104 /* test_sdm_AMService.c in Sources */,
 				22EC43DE18F05BED003BA4C9 /* test_apple_AFC.c in Sources */,
+				3EAE0FBF191B722100276DA6 /* Vector.c in Sources */,
 				22B3D82518E872F10007F104 /* tests.c in Sources */,
+				3EAE0FBE191B722100276DA6 /* Matrix.c in Sources */,
 				22B3D80618E74EE40007F104 /* main.c in Sources */,
+				3EAE0FB9191B722100276DA6 /* CFDataAddition.c in Sources */,
 				22B3D82B18E8885E0007F104 /* test_sdm_AMDevice.c in Sources */,
 				22B3D81318E74FBF0007F104 /* test_AMDevice.c in Sources */,
+				3EAE0FBC191B722100276DA6 /* CFTypeAddition.c in Sources */,
 				22EC43E118F05C01003BA4C9 /* test_sdm_AFC.c in Sources */,
 				22B3D81A18E75BCC0007F104 /* listener.c in Sources */,
 				22B3D82E18E8957D0007F104 /* test_apple_AMService.c in Sources */,
+				3EAE0FBA191B722100276DA6 /* CFDictionaryAddition.c in Sources */,
 				22EC43DB18F05A7E003BA4C9 /* test_AFC.c in Sources */,
+				3EAE0FBD191B722100276DA6 /* File.c in Sources */,
 				22B3D82218E76A2C0007F104 /* test_AMService.c in Sources */,
+				3EAE0FBB191B722100276DA6 /* CFStringAddition.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,11 +418,18 @@
 		22B3D80C18E74EE40007F104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(BUILD_DIR)/$(CONFIGURATION)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/build/Release",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
@@ -340,11 +442,18 @@
 		22B3D80D18E74EE40007F104 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(BUILD_DIR)/$(CONFIGURATION)",
 					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/build/Release",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "";
