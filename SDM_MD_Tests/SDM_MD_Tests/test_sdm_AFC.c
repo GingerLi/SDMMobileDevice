@@ -139,6 +139,8 @@ kern_return_t test_sdm_AFCOperationCreateGetFileInfo(SDMMD_AMDeviceRef sdm, CFTy
 				SDMMD_AFCConnectionRef afc = SDMMD_AFCConnectionCreate(test_sdm_afc_conn);
 				if (afc) {
 					SDMMD_AFCOperationRef file_info = SDMMD_AFCOperationCreateGetFileInfo(CFSTR(kTestFileForAFC));
+                    //SDMMD_AFCOperationRef file_info = SDMMD_AFCOperationCreateGetFileInfo(CFSTR("/Downloads"));
+
 					result = SDMMD_AFCProcessOperation(afc, &file_info);
 					if (SDM_MD_CallSuccessful(result)) {
 						CFTypeRef test = file_info->packet->response;

@@ -5,60 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>02E92998-B52E-47F7-9344-4837A84566EB</string>
+	<string>7E8D2EDC-3DF3-43B4-815A-44003578617E</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SDMMobileDevice</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>69DB9D35-4562-46FC-9ADE-37339C753AA0</key>
-		<string>ssh://github.com/samdmarshall/Core-Lib.git</string>
-		<key>E03DDEF6-B97D-41E3-B129-83B8A6249CEB</key>
-		<string>ssh://github.com/samdmarshall/SDMMobileDevice.git</string>
-		<key>E3836662-8199-4399-9034-FC52A1A354C7</key>
-		<string>ssh://github.com/samdmarshall/Macro-Utilities.git</string>
+		<key>2638BE53-F733-4138-A27B-115DB43474F9</key>
+		<string>https://github.com/GingerLi/SDMMobileDevice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>SDMMobileDevice.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>69DB9D35-4562-46FC-9ADE-37339C753AA0</key>
-		<string>../Core</string>
-		<key>E03DDEF6-B97D-41E3-B129-83B8A6249CEB</key>
+		<key>2638BE53-F733-4138-A27B-115DB43474F9</key>
 		<string>..</string>
-		<key>E3836662-8199-4399-9034-FC52A1A354C7</key>
-		<string>../../Macro Utilities</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/samdmarshall/SDMMobileDevice.git</string>
+	<string>https://github.com/GingerLi/SDMMobileDevice.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E03DDEF6-B97D-41E3-B129-83B8A6249CEB</string>
+	<string>2638BE53-F733-4138-A27B-115DB43474F9</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>69DB9D35-4562-46FC-9ADE-37339C753AA0</string>
+			<string>2638BE53-F733-4138-A27B-115DB43474F9</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Core</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E3836662-8199-4399-9034-FC52A1A354C7</string>
-			<key>IDESourceControlWCCName</key>
-			<string>Macro Utilities</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E03DDEF6-B97D-41E3-B129-83B8A6249CEB</string>
-			<key>IDESourceControlWCCName</key>
-			<string>SDM_MD_Demo</string>
+			<string>SDMMobileDevice</string>
 		</dict>
 	</array>
 </dict>
