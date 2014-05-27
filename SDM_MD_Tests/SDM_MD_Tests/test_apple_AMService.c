@@ -62,11 +62,12 @@ void read_dir(service_conn_t afcFd, afc_connection* afc_conn_p, const char* dir)
     
     afc_dictionary afc_dict;
     afc_dictionary* afc_dict_p = &afc_dict;
-    AFCFileInfoOpen(*afc_conn_p, dir, afc_dict_p);
+    //afc_dictionary * afc_dict_p = malloc(sizeof(afc_dictionary));
+    AFCFileInfoOpen(afc_conn_p, dir, &afc_dict_p);
     
     afc_directory afc_dir;
     afc_directory* afc_dir_p = &afc_dir;
-    afc_error_t err = AFCDirectoryOpen(*afc_conn_p, dir, afc_dir_p);
+    afc_error_t err = AFCDirectoryOpen(afc_conn_p, dir, &afc_dir_p);
     
     if (err != 0)
     {
@@ -75,7 +76,7 @@ void read_dir(service_conn_t afcFd, afc_connection* afc_conn_p, const char* dir)
     }
     
     while(true) {
-        err = AFCDirectoryRead(*afc_conn_p, *afc_dir_p, &dir_ent);
+        err = AFCDirectoryRead(afc_conn_p, afc_dir_p, &dir_ent);
         
         if (!dir_ent)
             break;
@@ -88,11 +89,11 @@ void read_dir(service_conn_t afcFd, afc_connection* afc_conn_p, const char* dir)
         if (dir_joined[strlen(dir)-1] != '/')
             strcat(dir_joined, "/");
         strcat(dir_joined, dir_ent);
-        //read_dir(afcFd, afc_conn_p, dir_joined);
+        read_dir(afcFd, afc_conn_p, dir_joined);
         free(dir_joined);
     }
     
-    AFCDirectoryClose(*afc_conn_p, *afc_dir_p);
+    AFCDirectoryClose(afc_conn_p, afc_dir_p);
 }
 void list_files(struct am_device * device)
 {
@@ -109,7 +110,11 @@ void list_files(struct am_device * device)
     
     afc_connection afc_conn;
     afc_connection* afc_conn_p = &afc_conn;
-    AFCConnectionOpen(houseFd, 0, &afc_conn_p);
+    //afc_connection * afc_conn_p =  malloc(sizeof(afc_connection));
+    afc_error_t err = AFCConnectionOpen(houseFd, 0, &afc_conn_p);
+    if (err != MDERR_OK) {
+        return;
+    }
     
     read_dir(houseFd, afc_conn_p, "/");
 }

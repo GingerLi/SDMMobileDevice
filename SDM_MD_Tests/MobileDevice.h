@@ -308,9 +308,13 @@ enum {
 	const char * AFCGetClientVersionString(void);		// "@(#)PROGRAM:afc  PROJECT:afc-80"
 	
 	// directory related functions
+#if 0
 	afc_error_t AFCDirectoryOpen(afc_connection conn,const char *path, afc_directory *dir);
-	afc_error_t AFCDirectoryRead(afc_connection conn,afc_directory dir,char **dirent);
+    afc_error_t AFCDirectoryRead(afc_connection conn,afc_directory dir,char **dirent);
 	afc_error_t AFCDirectoryClose(afc_connection conn,afc_directory dir);
+#endif
+
+
 	
 	afc_error_t AFCDirectoryCreate(afc_connection conn,const char *dirname);
 	afc_error_t AFCRemovePath(afc_connection conn,const char *dirname);
@@ -331,7 +335,9 @@ enum {
 	
 	// device/file information functions
 	//afc_error_t AFCDeviceInfoOpen(afc_connection conn, afc_dictionary *info);
+#if 0
 	afc_error_t AFCFileInfoOpen(afc_connection conn, const char *path, afc_dictionary *info);
+#endif
 	afc_error_t AFCKeyValueRead(afc_dictionary dict, const char **key, const char **val);
 	afc_error_t AFCKeyValueClose(afc_dictionary dict);
 	
@@ -484,9 +490,11 @@ enum {
 	 * Returns:
 	 *      MDERR_OK                if successful
 	 */
-#if 0
+
 	afc_error_t AFCDirectoryOpen(afc_connection *conn, const char *path, struct afc_directory **dir);
-	
+    afc_error_t AFCDirectoryRead(afc_connection *conn/*unsigned int unused*/, struct afc_directory *dir, char **dirent);
+    afc_error_t AFCDirectoryClose(afc_connection *conn, struct afc_directory *dir);
+#if 0
 	/* Acquires the next entry in a directory previously opened with
 	 * AFCDirectoryOpen(). When dirent is filled with a NULL value, then the end
 	 * of the directory has been reached. '.' and '..' will be returned as the
@@ -497,9 +505,9 @@ enum {
 	 *      MDERR_OK                if successful, even if no entries remain
 	 */
 	
-	afc_error_t AFCDirectoryRead(afc_connection *conn/*unsigned int unused*/, struct afc_directory *dir, char **dirent);
+
 	
-	afc_error_t AFCDirectoryClose(afc_connection *conn, struct afc_directory *dir);
+
 	afc_error_t AFCDirectoryCreate(afc_connection *conn, const char *dirname);
 	afc_error_t AFCRemovePath(afc_connection *conn, const char *dirname);
 	afc_error_t AFCRenamePath(afc_connection *conn, const char *from, const char *to);
@@ -567,6 +575,8 @@ enum {
 	/* ----------------------------------------------------------------------------
 	 *   Less-documented public routines
 	 * ------------------------------------------------------------------------- */
+    
+	afc_error_t AFCFileInfoOpen(afc_connection *conn, const char *path, struct afc_dictionary **info);
 #if 0
 	/* mode 2 = read, mode 3 = write */
 	afc_error_t AFCFileRefOpen(afc_connection *conn, const char *path, unsigned long long mode, afc_file_ref *ref);
@@ -576,7 +586,7 @@ enum {
 	afc_error_t AFCFileRefWrite(afc_connection *conn, afc_file_ref ref, const void *buf, unsigned int len);
 	afc_error_t AFCFileRefClose(afc_connection *conn, afc_file_ref ref);
 	
-	afc_error_t AFCFileInfoOpen(afc_connection *conn, const char *path, struct afc_dictionary **info);
+
 	afc_error_t AFCKeyValueRead(struct afc_dictionary *dict, char **key, char **val);
 	afc_error_t AFCKeyValueClose(struct afc_dictionary *dict);
 	
