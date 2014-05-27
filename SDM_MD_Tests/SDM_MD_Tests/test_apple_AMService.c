@@ -116,7 +116,7 @@ void list_files(struct am_device * device)
         return;
     }
     
-    read_dir(houseFd, afc_conn_p, "/");
+    read_dir(houseFd, afc_conn_p, "/Library/Caches");
 }
 kern_return_t test_apple_AMDeviceLookupApplications(struct am_device *apple, CFTypeRef *value) {
 	CFDictionaryRef apple_response = NULL;
