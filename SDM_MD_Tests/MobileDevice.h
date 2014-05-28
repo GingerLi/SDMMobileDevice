@@ -312,17 +312,9 @@ enum {
 	afc_error_t AFCDirectoryOpen(afc_connection conn,const char *path, afc_directory *dir);
     afc_error_t AFCDirectoryRead(afc_connection conn,afc_directory dir,char **dirent);
 	afc_error_t AFCDirectoryClose(afc_connection conn,afc_directory dir);
-#endif
-
-
-	
-	afc_error_t AFCDirectoryCreate(afc_connection conn,const char *dirname);
 	afc_error_t AFCRemovePath(afc_connection conn,const char *dirname);
-	afc_error_t AFCRenamePath(afc_connection conn,const char *from,const char *to);
-	afc_error_t AFCLinkPath(afc_connection conn,uint64_t mode, const char *target,const char *link);
-	//	NSLog(@"linkpath returned %#lx",AFCLinkPath(_afc,(1=hard,2=sym)"/tmp/aaa","/tmp/bbb"));
-	
-	// file i/o functions
+    
+    // file i/o functions
 	afc_error_t AFCFileRefOpen(afc_connection conn, const char *path, uint64_t mode,afc_file_ref *ref);
 	afc_error_t AFCFileRefClose(afc_connection conn,afc_file_ref ref);
 	afc_error_t AFCFileRefSeek(afc_connection conn,	afc_file_ref ref, int64_t offset, uint64_t mode);
@@ -330,6 +322,17 @@ enum {
 	afc_error_t AFCFileRefRead(afc_connection conn,afc_file_ref ref,void *buf,uint32_t *len);
 	afc_error_t AFCFileRefSetFileSize(afc_connection conn,afc_file_ref ref, uint64_t offset);
 	afc_error_t AFCFileRefWrite(afc_connection conn,afc_file_ref ref, const void *buf, uint32_t len);
+#endif
+
+
+	
+	afc_error_t AFCDirectoryCreate(afc_connection conn,const char *dirname);
+
+	afc_error_t AFCRenamePath(afc_connection conn,const char *from,const char *to);
+	afc_error_t AFCLinkPath(afc_connection conn,uint64_t mode, const char *target,const char *link);
+	//	NSLog(@"linkpath returned %#lx",AFCLinkPath(_afc,(1=hard,2=sym)"/tmp/aaa","/tmp/bbb"));
+	
+
 	// afc_error_t AFCFileRefLock(afc_connection *conn, afc_file_ref ref, ...);
 	// 00019747 T _AFCFileRefUnlock
 	
@@ -493,6 +496,7 @@ enum {
 
 	afc_error_t AFCDirectoryOpen(afc_connection *conn, const char *path, struct afc_directory **dir);
     afc_error_t AFCDirectoryRead(afc_connection *conn/*unsigned int unused*/, struct afc_directory *dir, char **dirent);
+    afc_error_t AFCRemovePath(afc_connection *conn, const char *dirname);
     afc_error_t AFCDirectoryClose(afc_connection *conn, struct afc_directory *dir);
 #if 0
 	/* Acquires the next entry in a directory previously opened with
@@ -577,14 +581,15 @@ enum {
 	 * ------------------------------------------------------------------------- */
     
 	afc_error_t AFCFileInfoOpen(afc_connection *conn, const char *path, struct afc_dictionary **info);
-#if 0
-	/* mode 2 = read, mode 3 = write */
+    /* mode 2 = read, mode 3 = write */
 	afc_error_t AFCFileRefOpen(afc_connection *conn, const char *path, unsigned long long mode, afc_file_ref *ref);
 	afc_error_t AFCFileRefSeek(afc_connection *conn, afc_file_ref ref, unsigned long long offset1, unsigned long long offset2);
 	afc_error_t AFCFileRefRead(afc_connection *conn, afc_file_ref ref, void *buf, unsigned int *len);
 	afc_error_t AFCFileRefSetFileSize(afc_connection *conn, afc_file_ref ref, unsigned long long offset);
 	afc_error_t AFCFileRefWrite(afc_connection *conn, afc_file_ref ref, const void *buf, unsigned int len);
 	afc_error_t AFCFileRefClose(afc_connection *conn, afc_file_ref ref);
+#if 0
+
 	
 
 	afc_error_t AFCKeyValueRead(struct afc_dictionary *dict, char **key, char **val);

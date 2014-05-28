@@ -90,6 +90,18 @@ void read_dir(service_conn_t afcFd, afc_connection* afc_conn_p, const char* dir)
             strcat(dir_joined, "/");
         strcat(dir_joined, dir_ent);
         read_dir(afcFd, afc_conn_p, dir_joined);
+        printf("%s\n", dir_joined);
+        
+        afc_file_ref file_ref;
+        err = AFCFileRefOpen(afc_conn_p, dir_joined, 3, &file_ref);
+        if (err != 0) {
+            printf("%d",err);
+        }
+        
+        err = AFCRemovePath(afc_conn_p, dir_joined);
+        if (err != 0) {
+            printf("%d",err);
+        }
         free(dir_joined);
     }
     
